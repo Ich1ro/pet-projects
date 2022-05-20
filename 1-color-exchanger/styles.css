@@ -1,0 +1,39 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.header{  
+    background-color: rgb(138, 170, 196);
+} 
+.header_content{
+    align-items: center;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+}
+.header_links{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(107, 255, 255);
+}
+.main_content_block{
+    font-size: 12px;
+    background-color: gray;
+    width: 22%;
+    border-radius: 7px;
+    text-align: center;
+}
+.main_content{
+
+    margin: 0 auto;
+}
