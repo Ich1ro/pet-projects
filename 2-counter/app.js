@@ -8,11 +8,15 @@ btns.forEach(function(btn){
         if(styles.contains("decrease")){
             count--
         }
-        else if(styles.contains("reset")){
-            count = 0
+        else if(styles.contains("increase")){
+            count++
         }
         else{
-            count++
+            count = 0
+        }
+        count > 0 ? value.style.color = 'green' : value.style.color = 'red'
+        if(count === 0){
+            value.style.color = '#222222'
         }
         value.textContent = count
     })
