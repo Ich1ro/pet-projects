@@ -57,12 +57,12 @@
     outline: none;
 }
 
-@media screen and (min-width: 700px){
+@media (min-width: 700px){
     .nav_name button{
         display: none;
     }
 }
-@media screen and (max-width: 700px){
+@media (max-width: 700px){
     .menu{
         height: auto;
     }
