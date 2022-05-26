@@ -4,4 +4,114 @@
     color: #222222;
     box-sizing: border-box;
 }
-
+body{
+    height: 100vh;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, #ffd6ff, #fbd3ff, #f7d0ff, #f3cdff, #eecaff, #eac7ff, #e5c5ff, #e0c2ff, #dabfff, #d5bcff, #ceb9ff, #c8b6ff);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+  place-items: center;
+}
+.baner{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}*
+.text{
+    text-transform: capitalize;
+}
+.btn{
+    margin-top: 15px;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    font-size: 18px;
+    outline: none;
+    padding: 3px 10px;
+    font-weight: bold;
+    transition: background-color 0.5s linear, color 0.5s linear;
+}
+.btn:disabled {
+    pointer-events: none;
+  }
+  .btn:hover {
+    color: #fff;
+    background-color: #222222;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transition: background-color 0.5s linear, color 0.5s linear;
+  }
+  .btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  * {
+    box-sizing:border-box;
+  }
+.modal_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    z-index: -10;
+    background-color: rgba(0, 0, 0, 0.25); 
+} 
+.show_modal{
+    visibility: visible;
+    z-index: 10;      
+}
+.modal_text{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+.modal_header{
+    padding: 0 25px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:0 1px 1px rgb(0 0 0 / 11%), 0 2px 2px rgb(0 0 0 / 11%), 0 4px 4px rgb(0 0 0 / 11%), 0 8px 8px rgb(0 0 0 / 11%), 0 16px 16px rgb(0 0 0 / 11%), 0 32px 32px rgb(0 0 0 / 11%);
+}
+.modal_header_text{
+    text-align: center;
+    text-transform: capitalize;
+}
+.close_btn{
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background: none;
+    outline: none;  
+}
+.close_btn i{
+    font-weight: 1000;
+    transition: color 0.5s linear;
+}
+.close_btn i:hover{
+    color: red;
+    transition: color 0.5s linear;
+}
+.modal_container{
+    background: white;
+    width: 30%;
+    height: 200px;
+}
