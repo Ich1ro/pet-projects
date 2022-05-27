@@ -7,3 +7,56 @@
 body{
     height: 100vh;
 }
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    height: 50px;
+    box-shadow:0 1px 1px rgb(0 0 0 / 11%), 0 2px 2px rgb(0 0 0 / 11%), 0 4px 4px rgb(0 0 0 / 11%), 0 8px 8px rgb(0 0 0 / 11%), 0 16px 16px rgb(0 0 0 / 11%), 0 32px 32px rgb(0 0 0 / 11%);
+}
+.nav-center{
+    width: 100%;   
+    padding: 0px 25px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links, .nav-soclinks{
+    padding: 0;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.nav-links a{
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 50px;
+    display: block; 
+    height: 50px;
+    padding: 0 10px;
+    transition: background-color 0.5s linear, color 0.5s linear;
+}
+.nav-links a:hover{
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s linear, color 0.5s linear;
+}
+.nav-soclinks i{
+    margin: 0 8px;
+    transition: color 0.5s linear;
+}
+.nav-soclinks i:hover{
+    color: aquamarine;
+    transition: color 0.5s linear;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+
+}
+    
